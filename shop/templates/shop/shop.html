@@ -1,0 +1,23 @@
+{% extends 'main/parts/pattern.html' %}
+{% load static %}
+{% block content %}
+<main>
+   <div class="container">
+      <div class="product_box">
+      {% for post in posts %}
+         <div class="product_item">
+            <img src="{{post.img.url}}" class='product_img' alt="no-photo">
+            <div class="product_content">
+               <h3 class='product_content_title'>{{post.name}}</h3>
+               <p>{{post.description}}</p>
+               <div class="un_product_box">
+                  <a class='price_btn' href="#">Купить</a>
+                  <p class='price'><b>{{post.price}} UAH</b></p>
+               </div>
+            </div>
+         </div>
+      {% endfor %}
+      </div>
+   </div>
+</main>
+{% endblock content %}

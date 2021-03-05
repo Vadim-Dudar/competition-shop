@@ -1,0 +1,209 @@
+body{
+   padding: 0;
+   margin: 0;
+   background-color: #fff;
+   font-family: 'Montserrat', sans-serif;
+}
+.container{
+   width: 100%;
+   max-width: 1200px;
+   padding: 10px 0;
+   margin: 0 auto;
+}
+ul{
+   padding: 0;
+}
+a{
+   text-decoration: none;
+   color: black;
+}
+/* header */
+header{
+   display: flex;
+   height: 60px;
+   background-color: #fff;
+   justify-content: space-evenly;
+}
+.btn{
+   text-decoration: none;
+   color: #000;
+   font-weight: 500;
+   margin: 0 10px;
+   padding: 10px 10px 5px 5px;
+   border-radius: 1px;
+   transition: background-color .3s ease-out;
+}
+.btn:hover{
+   background-color: #e3e3e3;
+   color: black;
+}
+.icon{
+   height: 20px;
+   padding: 0 5px;
+}
+.logo{
+   font-weight: 700;
+   margin-top: 13px;
+   padding: 5px 10px;
+   color: #fff;
+   background-color: #F28B1E;
+   border-radius: 10px 10px 10px 0px;
+}
+.logo:hover{
+   color: black;
+   transition: color .3s ease-out;
+}
+.sec_p{
+   color: #111;
+}
+.logo:hover .sec_p{
+   color: #fff;
+   transition: color .3s ease-out;
+}
+.search_field{
+   height: 25px;
+   padding: 15px;
+   border-radius: 0px;
+   border: none;
+   background-color: #e3e3e3;
+}
+.search_btn{
+   background-color: #F28B1E;
+   box-shadow: none;
+   height: 30px;
+   color: #fff;
+   border: none;
+   border-radius: 1px;
+   transition: background-color .3s ease-out;
+}
+.search_btn:hover{
+   background-color: #DB5B0F;
+}
+.search_box_form{
+   background-color: #e3e3e3;
+   width: 100%;
+}
+/* main */
+/* intro */
+.intro_box{
+   display: flex;
+   justify-content: start;
+   font-size: 30px;
+}
+.intro_box_1{
+   background-image: url(../img/pole_1.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   height: calc(100vh - 60px);
+}
+.intro_item{
+   padding-top: 40px;
+   width: 800px;
+   color: #fff;
+   margin: 0 auto;
+}
+.intro_description{
+   padding-left: 10px;
+   margin: 7px 0;
+   text-transform: uppercase;  
+   text-align: center;
+}
+/* product_preview */
+.product_preview_wrapper{
+   max-width: 90%;
+   margin: 0 auto;
+}
+.product_preview_box{
+   display: flex;
+   justify-content: space-between;
+}
+.product_preview_img{
+   width: 300px;
+   margin-right: 20px;
+}
+.product_preview_content_title{
+   text-transform: uppercase;
+}
+.product_preview_item{
+   min-height: 250px;
+   display: flex;
+   justify-content: end;
+   width: 30%;
+   margin: 30px 10px;
+}
+.product_preview_content{
+   position: relative;
+   width: 50%;
+}
+.un_box{
+   position: absolute;
+   bottom: 10px;
+   right: 20px;
+}
+.price_btn{
+   margin-right: 10px;
+   padding: 5px 10px;
+   background-color: #F28B1E;
+   transition: background-color .3s ease-out;
+   color: #fff;
+}
+.price_btn:hover{
+   background-color: #DB5B0F;
+}
+/* us_block */
+.us_block_box{
+   background-color: #999;
+   color: #fff;
+   background-image: url(../img/us_team2.jpg);
+   background-size: cover;
+}
+.us_block_title_box{
+   margin-top: 20px;
+}
+.us_block_title{
+   text-transform: uppercase;
+   text-align: center;
+   font-size: 23px;
+}
+/* shop */
+.product_item{
+   display: flex;
+   justify-content: space-between;
+   padding-bottom: 10px;
+   border-bottom: 1px solid #000;
+}
+.product_img{
+   height: 300px;
+}
+.product_content{
+   position: relative;
+   width: 400px;
+}
+.product_content_title{
+   text-transform: uppercase;
+}
+.un_product_box{
+   position: absolute;
+   bottom: 0;
+   right: 10px;
+}
+/* footer */
+footer{
+   height: 120px;
+}
+.footer_content_box{
+   display: flex;
+   justify-content: space-evenly;
+}
+.footer_btn{
+   transition: color .3s ease-out;
+}
+.footer_btn:hover{
+   color: #888;
+}
+.rights{
+   text-align: right;
+   margin: 0;
+   font-size: 15px;
+   padding-right: 10px;
+}

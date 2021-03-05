@@ -1,0 +1,16 @@
+{% load static %}
+<header>
+   <div class="logo_box"><a href="{% url 'index' %}"><h3 class='logo'>competition.<span class="sec_p">shop™</span></h3></a></div>
+   <div class="search_box">
+      <form class='search_box_form'>
+         <p><input class='search_field' type="search" name="request" placeholder="I'm looking for..."> 
+         <input class='search_btn' type="submit" value="Search"></p>
+      </form>
+   </div>
+   <div class="nav">
+      <ul>
+         <a class='btn' href="{% url 'shop' %}"><img class='icon' src="{% static 'icons/shop_icon.png' %}" alt="">Магазин</a>
+         <a class='btn' href="#"><img class='icon' src="{% static 'icons/about_us_icon.png' %}" alt="">О нас</a>
+      </ul>
+   </div>
+</header>

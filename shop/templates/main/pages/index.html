@@ -1,0 +1,49 @@
+{% extends 'main/parts/pattern.html' %}
+{% load static %}
+{% block content %}
+<main>
+   <div class="intro_box_1">
+      <div class="container">
+         <div class="intro_box">
+            <div class="intro_item">
+               <h2 class='intro_logo'>Футболки наивысшего качества</h2>
+               <p class='intro_description'><img src="{% static 'icons/main_icon.svg' %}" height='40' alt="">качествинные принты и футболки</p>
+               <p class='intro_description'><img src="{% static 'icons/love.svg' %}" height='40' alt="">сделано c любовью</p>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="product_preview_wrapper">
+      <div class="product_preview_box">
+         {% for post in posts %}
+            {% comment %} {% if posts.count >= 3 %}
+            <p>bgdfbfbdf</p>
+            {% else %} {% endcomment %}
+            <div class="product_preview_item">
+               <img src="{{post.img.url}}" class='product_preview_img' alt="no-photo">
+               <div class="product_preview_content">
+                  <h3 class='product_preview_content_title'>{{post.name}}</h3>
+                  <p>{{post.description}}</p>
+                  <div class="un_box">
+                     <a class='price_btn' href="#">Купить</a>
+                     <p class='price'><b>{{post.price}} UAH</b></p>
+                  </div>
+               </div>
+            </div>
+            {% comment %} {% endif %} {% endcomment %}
+         {% endfor %}
+      </div>
+   </div>
+   <div class="us_block_box">
+      <div class="container">
+         <div class="us_block_title_box"><h3 class='us_block_title'>о нас</h3></div>
+         <div class="us_block_content_block">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+         </div>
+      </div>
+   </div>
+   <div class="map_box">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10271.80021835254!2d28.595226796479363!3d49.937278431272794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x472cf9e0cbc16385%3A0x1ab62733ec36b59c!2z0JPRgNC40YjQutC-0LLRhtGLLCDQltC40YLQvtC80LjRgNGB0LrQsNGPINC-0LHQu9Cw0YHRgtGMLCAxMzMzNw!5e0!3m2!1sru!2sua!4v1612109007997!5m2!1sru!2sua" width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+   </div>
+</main>
+{% endblock content %}
