@@ -10,5 +10,4 @@ def shop(request):
    post = ShopCard.objects.all()
    return render(request, 'shop/shop.html', context={'posts': post})
 def cart_produckt(request):
-   post = ShopCard.objects.all()
-   return render(request, 'shop/cart_produckt.html', context={'posts': post})
+   return render(request, 'shop/cart_produckt.html')
