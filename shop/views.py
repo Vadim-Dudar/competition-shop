@@ -9,5 +9,5 @@ def index(request):
 def shop(request):
    post = ShopCard.objects.all()
    return render(request, 'shop/shop.html', context={'posts': post})
-def cart_produckt(request):
-   return render(request, 'shop/cart_produckt.html')
+def cart_produckt(request, slug):
+   return render(request, 'shop/cart_produckt.html', context={'post': slug})
